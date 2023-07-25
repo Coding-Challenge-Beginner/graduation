@@ -31,7 +31,7 @@ let nilaiIpa = 80;
 'nilai rata-rata yang diperoleh adalah 80'
 
 //output yang diharapkan
-'Selamat anda lulus!'
+'Selamat Anda lulus dengan nilai rata rata 80!'
 
 ===============================
 
@@ -43,7 +43,7 @@ let nilaiIpa = 65;
 'nilai rata-rata yang diperoleh adalah 65'
 
 //output yang diharapkan
-'Mohon maaf anda tidak lulus. Jangan khawatir anda dapat mengulang kelas secara gratis!'
+'Mohon maaf, Anda tidak lulus karena nilai rata-rata Anda kurang dari 75. Tidak perlu khawatir, Anda berhak mengulang kelas secara gratis karena nilai rata-rata Anda adalah 65, dan syarat mengulang kelas secara gratis adalah mendapatkan nilai rata-rata antara 60-74'
 
 ===============================
 
@@ -55,7 +55,7 @@ let nilaiIpa = 40;
 'nilai rata-rata yang diperoleh adalah 40'
 
 //output yang diharapkan
-'Mohon maaf anda tidak lulus. Tetapi anda dapat mengulang kelas dan dikenakan biaya sebesar Rp100.000'
+'Mohon maaf, Anda tidak lulus karena nilai rata-rata Anda kurang dari 75. Karena nilai rata-rata Anda adalah 40 dan syarat mengulang gratis adalah mendapatkan nilai rata-rata antara 60-74, maka Anda akan dikenakan biaya sebesar Rp100.000 jika ingin mengulang kelas.'
 ```
 
 **NOTED**: Jika salah satu nilai siswa kurang dari 0 atau lebih dari 100 maka tampilkan 'Nilai Invalid'
