@@ -1,12 +1,61 @@
-// !Silahkan cek readme.md terlebih dahulu untuk mengetahui rules test ini!
+function order(name, age, money) {
 
-function informasiKelulusanSiswa(nilaiMatematika, nilaiIps, nilaiIpa) {
-  // your code here
+    if (name == "") {
+       console.log("ANDA TIDAK BOLEH MASUK BRO !");
+        return;
+    };
+    var drink;
+    var price;
+
+    if (age < 17) {
+        drink = "juice";
+        price = 50000;
+    }else {
+        drink = "anggur";
+        price = 300000;
+    }
+
+    if (money < drink) {
+        console.log("UANG ANDA KURANG SILAHKAN, ANDA KELUAR !");
+    }else{
+        const sisaUang = money - price;
+        console.log(`Anda bisa pesan minuman ${drink}. Sisa uang Anda: ${sisaUang}`);
+    }
 }
 
-console.log(informasiKelulusanSiswa(80, 80, 80)) // "Lulus"
-console.log(informasiKelulusanSiswa(65, 65, 65)) // "Tidak Lulus. Mengulang secara gratis"
-console.log(informasiKelulusanSiswa(40, 40, 40)) // "Tidak Lulus. Mengulang tetapi berbayar"
-console.log(informasiKelulusanSiswa(80, 80, -1)) // "Nilai Invalid"
-console.log(informasiKelulusanSiswa(80, 80, 101)) // "Nilai Invalid"
-console.log(informasiKelulusanSiswa(0, -1, 101)) // "Nilai Invalid"
+order("rizal", 20, 1000000000);
+
+
+// function userData() {
+
+//     const readline = require('readline');
+//     const rl = readline.createInterface({
+//       input: process.stdin,
+//       output: process.stdout
+//     });
+
+//     rl.question("Masukkan nama Anda: ", (name) => {
+//         if (name == "") {
+//             console.log("ANDA TIDAK BOLEH MASUK BRO !");
+//             rl.close();
+//         };
+//         rl.question("Masukkan usia Anda: ", (age) => {
+//             rl.question("Masukkan jumlah uang Anda: ", (money) => {
+//                 // Konversi age dan money dari string menjadi number
+//                 const ageNumber = parseInt(age);
+//                 const moneyNumber = parseInt(money);
+                
+//                 // Panggil fungsi pesanMinuman dengan data yang dimasukkan pengguna
+//                 order(name, ageNumber, moneyNumber);
+                
+//                 // Tutup readline interface setelah pengguna selesai memasukkan data
+//                 rl.close();
+//             });
+//         });
+//     });
+// }
+
+// userData();
+    
+// let car = {close: () => "test"}
+//     console.log(car.close());
